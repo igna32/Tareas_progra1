@@ -1,5 +1,5 @@
 contador = 0
-limite = 5
+limite = 10
 cant_masc = 0
 cant_fem = 0
 cant_otro = 0
@@ -63,6 +63,7 @@ while contador != limite:
 porc_no_ia = (contador * cant_no_ia) / 100
 
 print(".......................")
+print(f"Empleados ingresados: {contador}")
 print(f"Cant empleados que votaron por ia: {cant_iot_ia}")
 print(f"Porcentaje de empleados que no votaron por ia: {porc_no_ia}")
 print(f"Empleado de mayor edad: Nombre: {nombre_mayor}, Edad: {mayor_edad}, Tecnologia: {tec_mayor}")
