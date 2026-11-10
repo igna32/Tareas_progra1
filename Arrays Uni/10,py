@@ -1,0 +1,20 @@
+a = [1,2,3,4]
+b = [4,5,6]
+
+def retornar_union(lista1, lista2):
+    resultado = []
+    for i in range(len(lista1)):
+        resultado += [lista1[i]]
+
+    for i in range(len(lista2)):
+        esta = False
+        for j in range(len(resultado)):
+            if lista2[i] == resultado[j]:
+                esta = True
+
+        if not esta:
+            resultado += [lista2[i]]
+
+    return resultado
+
+print(retornar_union(a,b))

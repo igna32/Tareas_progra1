@@ -41,4 +41,3 @@ def get_string(mensaje: str, mensaje_error:str, longitud: int, reintentos:int) -
             resultado = None
 
     return resultado
-
